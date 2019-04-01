@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+/develop
+/content/**/order.txt
+/public/media
+/site/cache
+/site/sessions
+/site/accounts
+/site/config/secrects/*
+/site/config/.license

@@ -1,0 +1,180 @@
+Title: Datenschutzerklärung
+
+----
+
+Text:
+
+# Datenschutzerklärung
+
+Wir freuen uns über Ihren Besuch auf unserer Internetseite und Ihrem Interesse an unserem Unternehmen. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Nachstehend informieren wir Sie gemäß Art. 12, 13 und 21 der Datenschutzgrundverordnung (DSGVO) sowie § 13 Telemediengesetz (TMG) über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website babyreport.de.
+
+Personenbezogene Daten sind Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person. Darunter fallen Informationen wie der bürgerliche Name, die Anschrift, die Telefonnummer und das Geburtsdatum.
+
+## I. Verantwortlicher
+Verantwortlicher im Sinne der Datenschutz-Grundverordnung:
+Peter Wagner
+Hechinger Strasse 53
+72770 Reutlingen
+info@babyreport.de
+
+## II. Datenschutzbeauftragter
+Herr Peter Wagner
+info@babyreport.de
+
+## III. Zwecke, Rechtsgrundlagen und Informationen der Datenverarbeitung
+
+### 1. Informatorische Nutzung der Website
+Sie können unsere Website besuchen, um sich über unsere Angebote und Leistungen zu informieren und ohne Angaben zu Ihrer Person zu machen. Wenn Sie unsere Website lediglich informatorisch nutzen, uns also keine Informationen zu Ihrer Person übermitteln, erheben wir keine personenbezogenen Daten, mit Ausnahme der Daten, die Ihr Browser übermittelt, um Ihnen den Besuch der Webseite zu ermöglichen.
+
+Zudem setzen wir Cookies ein, um die Nutzung unserer Website statistisch zu analysieren (siehe auch Punkt 1.b)
+
+#### a. Technische Bereitstellung der Website
+Zum Zweck der technischen Bereitstellung der Website, ist es erforderlich, dass wir bestimmte, automatisch übermittelte Informationen von Ihnen verarbeiten, damit Ihr Browser unsere Website anzeigen und Sie die Website nutzen können. Diese Informationen werden bei jedem Aufruf unserer Internetseite automatisch erfasst. Diese Informationen beziehen sich auf das Computersystem des aufrufenden Rechners. Folgende Informationen werden dabei erhoben:
+
+- IP-Adresse;
+- Browsertyp/ -version (Bsp.: Firefox 59.0.2 (64 Bit));
+- Browsersprache (Bsp.: Deutsch);
+- Verwendetes Betriebssystem (Bsp.: Windows 10);
+- Innere Auflösung des Browserfensters;
+- Bildschirmauflösung;
+- Javascriptaktivierung;
+- Java An / Aus;
+- Cookies An / Aus;
+- Farbtiefe;
+- Uhrzeit des Zugriffs.
+
+Wir verarbeiten Ihre personenbezogenen Daten zur technischen Bereitstellung unserer Website auf Grundlage der folgenden Rechtsgrundlagen:
+
+- zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen gemäß Art.6 Abs.1 lit.b DSGVO, soweit Sie unsere Website besuchen, um sich über unsere Produkte und Angebote zu informieren; und
+- zur Wahrung unserer berechtigten Interessen gemäß Art.6 Abs.1 lit.f DSGVO, um Ihnen die Website technisch zur Verfügung stellen zu können. Unser berechtigtes Interesse besteht dabei darin, Ihnen eine ansprechende, technisch funktionierende und benutzerfreundliche Website zur Verfügung stellen zu können sowie um Maßnahmen zum Schutz unserer Website vor Cyberrisiken zu ergreifen und zu verhindern, dass von unserer Website Cyberrisiken für Dritte ausgehen.
+
+Ferner setzen wir Cookies ein, um Ihnen unsere Webseite zur Nutzung zur Verfügung zu stellen. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser bei dem Aufruf einer Website auf Ihrem Computersystem gespeichert werden. Ein Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht. Wir setzen diese Cookies dazu ein, Ihnen unsere Webseite mit ihren technischen Funktionen zur Verfügung zu stellen. Diese Funktionen sind der persönliche Login und das zur Verfügung stellen des Warenkorbs. Einige Funktionen unserer Website können ohne den Einsatz von Cookies nicht angeboten werden. In den Cookies werden dabei die folgenden Informationen gespeichert und an uns übermittelt:
+
+- Produkte im Warenkorb
+- Log-In Informationen
+
+Ihre Informationen, die wir durch vorstehende Cookies gesammelt haben, werden von uns nicht verwendet, um Nutzerprofile zu erstellen oder Ihr Surfverhalten auszuwerten.
+
+#### b. Statistische Analyse der Nutzung der Website und Reichweitenerhöhung
+Zum Zweck der statistischen Analyse der Nutzung unserer Website setzen wir Google Analytics und damit Cookies ein, die eine Analyse Ihres Surfverhaltens ermöglichen. Dadurch können wir die Qualität unserer Website und ihrer Inhalte verbessern. Wir erfahren, wie die Website genutzt wird und können so unser Angebot stetig optimieren.
+
+Die im Rahmen der statistischen Analyse unserer Website erlangten Informationen werden nicht mit Ihren sonstigen, im Rahmen der Website erfassten Daten zusammengeführt.
+Wir verarbeiten Ihre personenbezogenen Daten zur statistischen Analyse der Nutzung unserer Website auf Grundlage der folgenden Rechtsgrundlagen:
+
+- zur Wahrung unserer berechtigten Interessen gemäß Art.6 Abs.1 lit.f DSGVO i.V.m. § 15 Abs. 3 TMG; unser berechtigtes Interesse besteht in der bedarfsgerechten Gestaltung unserer Website.
+
+Google Analytics
+
+Auf unserer Website benutzen wir Google Analytics, einen Webanalysedienst der Google Inc.. Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung unserer Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Aufgrund der Aktivierung der IP-Anonymisierung auf unserer Website wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. In unserem Auftrag wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
+
+Auf unserer Website verwenden wir Google Analytics mit der Erweiterung „_anonymizeIp()“. Dadurch werden IP-Adressen gekürzt weiterverarbeitet, eine direkte Personenbeziehbarkeit kann damit ausgeschlossen werden.
+
+Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen unserer Website vollumfänglich werden nutzen können.
+
+Sie können die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung unserer Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: http://tools.google.com/dlpage/gaoptout?hl=de
+
+Nähere Informationen zu Nutzungsbedingungen und Datenschutz von bzw. bei Google Analytics finden Sie unter http://www.google.com/analytics/terms/de.html bzw. unter https://www.google.de/intl/de/policies/
+
+### 2. Aktive Nutzung der Website
+Neben der rein informatorischen Nutzung unserer Website können Sie unsere Website auch aktiv nutzen, um mit uns in Kontakt zu treten. Zusätzlich zu der oben dargestellten Verarbeitung Ihrer personenbezogenen Daten bei einer rein informatorischen Nutzung verarbeiten wir dann auch personenbezogene Daten von Ihnen, die Sie uns im Rahmen der Interaktion zur Verfügung stellen.
+
+
+#### a. Nutzeranfragen
+Wenn Sie uns eine Anfrage per E-Mail zusenden, verarbeiten wir die von Ihnen in diesem Zusammenhang mitgeteilten personenbezogenen Daten, um Ihre Anfrage zu bearbeiten und beantworten zu können. Dazu zählen jedenfalls Ihre E-Mail Adresse und ggfs. Ihr Name, sowie die sonstigen Informationen, die Sie uns im Rahmen Ihrer Mitteilung zusenden.
+Wir verarbeiten Ihre personenbezogenen Daten zur Beantwortung von Nutzeranfragen auf Grundlage der folgenden Rechtsgrundlagen:
+
+- zur Wahrung unserer berechtigten Interessen gemäß Art.6 Abs.1 lit.f DSGVO; unser berechtigtes Interesse besteht in der sachgerechten Beantwortung von Nutzeranfragen.
+
+Ist Ihre Nutzeranfrage auf den Abschluss eines Vertrags (z.B. Bezug unserer Produkte und Dienstleistungen, Aufnahme in unsere Wohnheime, Abonnement unserer Zeitschrift, Teilnahme an Freizeitaktivitäten) mit uns gerichtet, verarbeiten wir die von Ihnen in diesem Zusammenhang mitgeteilten personenbezogenen Daten, für die Anbahnung, den Abschluss und die Durchführung des Vertrags mit Ihnen. Die für den Vertragsschluss jeweils notwendigen personenbezogenen Daten werden Ihnen von dem jeweiligen Ansprechpartner im Laufe der Vertragsanbahnung mitgeteilt.
+Wir verarbeiten Ihre personenbezogenen Daten zur Beantwortung von Nutzeranfragen, die auf den Abschluss eines Vertrags gerichtet sind, auf Grundlage der folgenden Rechtsgrundlagen:
+
+- zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen gemäß Art. 6 Abs. 1 lit. b DSGVO.
+
+#### b. Einhaltung gesetzlicher Vorschriften
+Wir verarbeiten Ihre personenbezogenen Daten zudem, um sonstige gesetzliche Pflichten, die uns im Zusammenhang mit der Abwicklung der Bestellung treffen, zu erfüllen. Hierzu zählen insbesondere handels-, gewerbe- oder steuerrechtliche Aufbewahrungsfristen.
+Wir verarbeiten Ihre personenbezogenen Daten dabei aufgrund der folgenden Rechtsgrundlagen:
+- zur Erfüllung einer rechtlichen Verpflichtung, der wir unterliegen gemäß Art. 6 Abs. 1 lit. c DSGVO in Verbindung mit Handels-, Gewerbe, oder Steuerrecht, soweit wir dazu verpflichtet sind, Ihre Daten aufzuzeichnen und aufzubewahren.
+
+#### c. Rechtsdurchsetzung
+Wir verarbeiten Ihre personenbezogenen Daten zudem, um unsere Rechte geltend und unsere rechtlichen Ansprüche durchsetzen zu können. Ebenfalls verarbeiten wir Ihre personenbezogenen Daten, um uns gegen rechtliche Ansprüche verteidigen zu können. Schließlich verarbeiten wir Ihre personenbezogenen Daten, soweit dies zur Abwehr oder Verfolgung von Straftaten erforderlich ist.
+Wir verarbeiten Ihre personenbezogenen Daten zu diesem Zwecke auf Grundlage der folgenden Rechtsgrundlagen:
+
+- zur Wahrung unserer berechtigten Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO, so-weit wir rechtliche Ansprüche geltend machen oder uns bei rechtlichen Streitigkeiten verteidigen oder wir Straftaten verhindern oder aufklären.
+
+## IV. Links
+Einige Abschnitte unserer Webseiten beinhalten Links zu den Webseiten von Drittanbietern. Diese Webseiten unterliegen eigenen Datenschutzgrundsätzen. Wir sind für deren Betrieb einschließlich der Datenhandhabung nicht verantwortlich. Wenn Sie Informationen an oder über solche Seiten von Drittanbietern senden, sollten Sie die Datenschutzerklärungen dieser Seiten prüfen, bevor Sie ihnen Informationen zukommen lassen, die Ihrer Person zugeordnet werden können.
+
+## V. Kategorien von Empfängern
+Zunächst erhalten nur unsere Mitarbeiter Kenntnis von Ihren personenbezogenen Daten. Zudem teilen wir Ihre personenbezogenen Daten, soweit dies gesetzlich erlaubt oder vorgeschrieben ist, anderen Empfängern mit, die für uns Dienstleistungen im Zusammenhang mit unserer Website erbringen. Wir beschränken die Weitergabe Ihrer personenbezogener Daten dabei auf das Notwendige, insbesondere um Ihre Bestellung abwickeln zu können. Teilweise erhalten unsere Dienstleister Ihre personenbezogenen Daten als Auftragsverarbeiter und sind dann bei dem Umgang mit Ihren personenbezogenen Daten streng an unsere Weisungen gebunden. Teilweise agieren die Empfänger eigenständig mit Ihren Daten, die wir an diese übermitteln.
+
+Nachfolgend nennen wir Ihnen die Kategorien der Empfänger Ihrer personenbezogenen Daten:
+
+- Ggf. Zahlungsdienstleister und Banken, bei der Abwicklung der Zahlung,
+- Externe Dienstleister für den Rechnungsversand per Post
+- Logistikdienstleister, um Ihnen die Waren zustellen zu können,
+- IT-Dienstleister bei der Administration und dem Hosting unserer Website,
+- Inkassounternehmen und Rechtsberater bei der Geltendmachung unserer Ansprüche
+- Ggfs. weitere Empfängerkategorien.
+
+## VI. Drittlandtransfer
+Im Rahmen des Einsatzes der Tools von Google übertragen wir Ihre gekürzte IP-Adresse in die USA. Der Datentransfer beruht auf dem Durchführungsbeschluss (EU) 2016/1250 der EU-Kommission vom 12. Juli 2016 gemäß der Richtlinie 95/46/EG des Europäischen Parlaments und des Rates über die Angemessenheit des vom EU-US-Datenschutzschild gebotenen Schutzes.
+Im Übrigen übertragen wir Ihre personenbezogenen Daten nicht in Länder außerhalb der EU bzw. des EWR oder an internationale Organisationen.
+
+## VII. Dauer der Speicherung
+### 1. Informatorische Nutzung der Website
+Bei der rein informatorischen Nutzung unserer Website speichern wir Ihre personenbezogen Daten auf unseren Servern ausschließlich für die Dauer des Besuchs unserer Website. Nachdem Sie unsere Website verlassen haben, werden Ihre personenbezogen Daten unverzüglich gelöscht.
+
+Von uns installierte Cookies werden in der Regel ebenfalls nach dem Verlassen unserer Website gelöscht. Dies gilt jedoch nicht für Cookies von Google Analytics und Log-in-Daten. In den Log-in-Daten werden der Zeitpunkt des letzten und des aktuellen Log-ins gespeichert. Warenkörbe von nicht registrierten Nutzern werden für einen Monat gespeichert und an-schließend gelöscht. Warenkörbe registrierter Nutzer werden gespeichert bis der Inhalt vom Nutzer gelöscht wird. Zudem haben Sie jederzeit die Möglichkeit, installierte Cookies selbst zu löschen.
+
+### 2. Aktive Nutzung der Website
+Bei einer aktiven Nutzung unserer Website speichern wir Ihre personenbezogenen Daten zunächst für die Dauer der Beantwortung Ihrer Anfrage bzw. für die Dauer unserer Geschäftsbeziehung. Das schließt auch die Anbahnung eines Vertrages (vorvertragliches Rechtsverhältnis) und die Abwicklung eines Vertrages mit ein. Bei Nutzern, die über ein Nutzerkonto verfügen, werden Bestellungen mit der ID des Benutzerkontos verknüpft.
+
+Zusätzlich speichern wir Ihre personenbezogenen Daten sodann bis zum Eintritt der Verjährung etwaiger rechtlicher Ansprüche aus der Beziehung mit Ihnen, um sie gegebenenfalls als Beweismittel einzusetzen. Die Verjährungsfrist beträgt in der Regel zwischen 12 und 36 Monaten, kann aber auch bis zu 30 Jahre betragen.
+
+Mit Eintritt der Verjährung löschen wir Ihre personenbezogenen Daten, es sei denn, es liegt eine gesetzliche Aufbewahrungspflicht, zum Beispiel aus dem Handelsgesetzbuch (§§ 238, 257 Abs. 4 HGB) oder aus der Abgabenordnung (§ 147 Abs. 3, 4 AO) vor. Diese Aufbewahrungspflichten können zwei bis zehn Jahre betragen.
+
+## VIII. Ihre Rechte als betroffenen Person
+Ihnen stehen unter den gesetzlichen Voraussetzungen die nachfolgenden Rechte als betroffene Person zu, die Sie uns gegenüber geltend machen können:
+
+Auskunftsrecht: Sie sind jederzeit berechtigt, im Rahmen von Art. 15 DSGVO von uns eine Bestätigung darüber zu verlangen, ob wir Sie betreffende personenbezogene Daten verarbeiten; ist dies der Fall, sind Sie im Rahmen von Art. 15 DSGVO ferner berechtigt, Auskunft über diese personenbezogenen Daten sowie bestimmte weitere Informationen (u.a. Verarbeitungszwecke, Kategorien personenbezogener Daten, Kategorien von Empfängern, geplante Speicherdauer, die Herkunft der Daten, den Einsatz einer automatisierten Entscheidungsfindung und im Fall des Drittlandtransfer die geeigneten Garantien) und eine Kopie Ihrer Daten zu erhalten.
+
+Recht auf Berichtigung: Sie sind berechtigt, nach Art. 16 DSGVO von uns zu verlangen, dass wir die über Sie gespeicherten personenbezogenen Daten berichtigen, wenn diese unzutreffend oder fehlerhaft sind.
+
+Recht auf Löschung: Sie sind berechtigt, unter den Voraussetzungen von Art. 17 DSGVO von uns zu verlangen, dass wir Sie betreffende personenbezogene Daten unverzüglich löschen. Das Recht auf Löschung besteht u.a. nicht, wenn die Verarbeitung der personenbezogenen Daten erforderlich ist für (i) die Ausübung des Rechts auf freie Meinungsäußerung und Information, (ii) zur Erfüllung einer rechtlichen Verpflichtung, der wir unterliegen (z. B. gesetzliche Aufbewahrungspflichten) oder (iii) zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+
+Recht auf Einschränkung der Verarbeitung: Sie sind berechtigt, unter den Voraussetzungen von Art. 18 DSGVO von uns zu verlangen, dass wir die Verarbeitung Ihrer personenbezogener Daten einschränken.
+
+Recht auf Datenübertragbarkeit: Sie sind berechtigt, unter den Voraussetzungen von Art. 20 DSGVO von uns zu verlangen, dass wir Ihnen die Sie betreffenden personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format übergeben.
+
+Widerrufsrecht: Sie haben das Recht, Ihre erteilte Einwilligung in die Verarbeitung personenbezogener Daten jederzeit mit Wirkung für die Zukunft zu widerrufen.
+
+Widerspruchsrecht: Sie sind berechtigt, unter den Voraussetzungen von Art. 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, so dass wir die Verarbeitung Ihrer personenbezogenen Daten beenden müssen. Das Widerspruchsrecht besteht nur in den in Art. 21 DSGVO vorgesehen Grenzen. Zudem können unsere Interessen einer Beendigung der Verarbeitung entgegenstehen, so dass wir trotz Ihres Widerspruchs berechtigt sind, Ihre personenbezogenen Daten zu verarbeiten.
+
+Beschwerderecht bei einer Aufsichtsbehörde: Sie sind berechtigt, unter den Voraussetzungen von Art. 77 DSGVO Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt. Das Beschwerderecht besteht unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs.
+
+Die für uns zuständige Aufsichtsbehörde ist:
+Landesbeauftragte für Datenschutz und Informationsfreiheit Baden-Württemberg
+Königstraße 10a
+70173 Stuttgart
+Telefon: 0711/615541-0
+Fax: 0711/615541-15
+E-Mail: poststelle@lfdi.bwl.de
+
+Wir empfehlen Ihnen allerdings, eine Beschwerde zunächst immer an unseren Datenschutzbeauftragten zu richten.
+
+Ihre Anträge über die Ausübung ihrer Rechte sollten nach Möglichkeit schriftlich an die oben angegebene Anschrift oder direkt an unseren Datenschutzbeauftragten adressiert werden.
+
+## IX. Umfang Ihrer Pflichten zur Bereitstellung von Daten
+Grundsätzlich sind Sie nicht verpflichtet, uns Ihre personenbezogenen Daten mitzuteilen. Wenn Sie dies jedoch nicht tun, werden wir Ihnen unsere Website nicht vollumfänglich zur Verfügung stellen können, Ihre Anfragen an uns nicht beantworten können und mit Ihnen keinen Vertrag eingehen können. Personenbezogene Daten, die wir nicht zwingend für die oben genannten Verarbeitungszwecke benötigen, sind als freiwillige Angaben gekennzeichnet.
+
+## X. Automatisierte Entscheidungsfindung / Profiling
+Wir setzen keine automatisierte Entscheidungsfindung oder ein Profiling (eine automatisierte Analyse Ihrer persönlichen Umstände) ein.
+
+## Information über Ihr Widerspruchsrecht Art. 21 DSGVO
+1. Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die aufgrund von Art. 6 Abs. 1 f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) oder Art. 6 Abs. 1 e DSGVO (Datenverarbeitung im öffentlichen Interesse) erfolgt, Widerspruch einzulegen, wenn dafür Gründe vorliegen, die sich aus Ihrer besonderen Situation ergeben. Dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.
+Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Ver-arbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+2. Wir verarbeiten Ihre personenbezogenen Daten nicht, um Direktwerbung zu betreiben.
+3. Der Widerspruch kann formfrei erfolgen und sollte möglichst gerichtet werden an:
+Kontaktdaten unseres Datenschutzbeauftragten:
+Herrn Peter Wagner
+info@babyreport.de

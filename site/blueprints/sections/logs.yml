@@ -1,0 +1,8 @@
+headline: Logs
+type: pages
+sortable: false
+templates: log
+text: "{{page.formattedDate}} – {{page.title}}"
+info: " {{page.type}} "
+sortBy: num desc
+status: published

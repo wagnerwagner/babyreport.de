@@ -1,0 +1,22 @@
+type: fields
+fields:
+  headline-paypal:
+    label: Paypal
+    type: headline
+    numbered: false
+  paypalPaymentId:
+    label: PayPal Payment ID
+    type: text
+    width: 1/4
+  paypalPayer:
+    label: PayPal Payer
+    type: text
+    width: 1/4
+  paypalTransactionAmount:
+    label: PayPal Transaction Amount
+    type: text
+    width: 1/4
+  paypalTransactionCurrency:
+    label: Stripe Transaction Currency
+    type: text
+    width: 1/4

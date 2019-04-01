@@ -1,0 +1,85 @@
+title: Site
+
+tabs:
+  pages:
+    sections:
+      allPages:
+        type: pages
+        headline: Shop Pages
+        templates:
+          - error
+          - checkout
+          - success
+      products:
+        type: pages
+        headline: Products
+        templates:
+          - product
+      legalPages:
+        type: pages
+        headline: Legal Pages
+        templates:
+          - legal
+  orders:
+    label: Orders
+    sections:
+      orders:
+        type: pages
+        parent: site.find("rechnungen")
+        template: order
+        sortBy: num desc
+        text: " {{ page.givenName }} {{ page.familyName }}, {{ page.city }} – {{ page.formattedSum }}"
+        info: " #{{ page.invoiceNumber }}"
+      testOrders:
+        type: pages
+        parent: site.find("test-rechnungen")
+        template: order
+        sortBy: num desc
+        text: " {{ page.givenName }} {{ page.familyName }}, {{ page.city }} – {{ page.formattedSum }}"
+        info: " #{{ page.invoiceNumber }}"
+  logs:
+    label: Logs
+    sections:
+      logs:
+        extends: sections/logs
+        parent: site.find('logs')
+  settings:
+    label: Settings
+    sections:
+      texts:
+        type: fields
+        fields:
+          seller:
+            label: Verkäufer
+            type: textarea
+          thankYouText:
+            label: Thank You Text
+            type: textarea
+          invoiceText:
+            label: Invoice Text
+            type: textarea
+          ibanInfo:
+            label: IBAN Info
+            type: textarea
+            buttons: false
+      logo:
+        headline: Logo
+        type: files
+        max: 1
+        template: logo
+      paymentMethods:
+        type: fields
+        fields:
+          paymentMethods:
+            label: Payment Methods
+            type: structure
+            fields:
+              value:
+                label: Value
+                type: text
+              text:
+                label: Text
+                type: text
+              buttonText:
+                label: Button Text
+                type: text

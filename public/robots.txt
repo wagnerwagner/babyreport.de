@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /rechnungen/
+Disallow: /test-rechnungen/

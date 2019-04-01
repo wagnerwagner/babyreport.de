@@ -1,0 +1,18 @@
+type: fields
+fields:
+  headline-stripe:
+    label: Stripe
+    type: headline
+    numbered: false
+  stripeChargeId:
+    label: Stripe Charge ID
+    type: text
+    width: 2/4
+  stripeChargeAmount:
+    label: Stripe Charge Amount
+    type: text
+    width: 1/4
+  stripeChargeCurrency:
+    label: Stripe Charge Currency
+    type: text
+    width: 1/4

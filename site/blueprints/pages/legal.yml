@@ -1,0 +1,6 @@
+title: Legal
+
+fields:
+  text:
+    label: Text
+    type: textarea

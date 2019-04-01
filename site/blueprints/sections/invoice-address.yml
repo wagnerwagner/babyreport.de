@@ -1,0 +1,55 @@
+type: fields
+fields:
+  headline-invoiceAddress:
+    label: Invoice Address
+    type: headline
+    numbered: false
+  givenName:
+    label: Given Name
+    type: text
+    required: true
+    width: 1/2
+    validate:
+      minLength: 3
+      maxLength: 255
+  familyName:
+    label: Family Name
+    type: text
+    required: true
+    width: 1/2
+    validate:
+      minLength: 3
+      maxLength: 255
+  street:
+    label: Street
+    type: text
+    required: true
+    validate:
+      minLength: 3
+      maxLength: 255
+  postalCode:
+    label: Postal Code
+    type: text
+    required: true
+    validate:
+      num
+      minLength: 5
+      maxLength: 5
+    width: 1/4
+  city:
+    label: City
+    type: text
+    required: true
+    validate:
+      minLength: 3
+      maxLength: 255
+    width: 2/4
+  countryCode:
+    label: Country Code
+    type: text
+    default: DE
+    validate:
+      minLength: 2
+      maxLength: 2
+    required: true
+    width: 1/4

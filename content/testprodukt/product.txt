@@ -1,0 +1,27 @@
+Title: Testprodukt
+
+----
+
+Cover:
+
+- baby-report-9706.jpg
+
+----
+
+Text: Diese Produkt steht nicht zum Verkauf. Es dient lediglich Testzwecken.
+
+----
+
+Productinfo:
+
+----
+
+Price: 0.5
+
+----
+
+Tax: 0
+
+----
+
+Priceinfo:

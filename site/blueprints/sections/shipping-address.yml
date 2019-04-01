@@ -1,0 +1,37 @@
+type: fields
+fields:
+  headlineShippingAdress:
+    label: Shipping Address
+    type: headline
+    numbered: false
+  useInvoiceAddressAsShippingAddress:
+    label: Use Invoice Address
+    type: toggle
+    default: No
+    text:
+      - "No"
+      - "Yes"
+  shippingAddressGivenName:
+    label: Given Name
+    type: text
+    width: 1/2
+  shippingAddressFamilyName:
+    label: Family Name
+    type: text
+    width: 1/2
+  shippingAddressStreet:
+    label: Street
+    type: text
+  shippingAddressPostalCode:
+    label: Postal Code
+    type: text
+    width: 1/4
+  shippingAddressCity:
+    label: City
+    type: text
+    width: 2/4
+  shippingAddressCountryCode:
+    label: Country Code
+    type: text
+    default: DE
+    width: 1/4

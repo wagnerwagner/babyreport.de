@@ -1,0 +1,53 @@
+type: fields
+fields:
+  headline-order:
+    label: Order
+    type: headline
+    numbered: false
+  shipped:
+    label: Shipped
+    type: toggle
+    text:
+      - "No"
+      - "Yes"
+  info-order:
+    label: Info
+    type: info
+    text: >
+      Invoice Number: {{ page.invoiceNumber }}<br>
+      Sum: {{ page.formattedSum }}<br>
+      Invoice Date: {{ page.formattedInvoiceDate }}<br>
+      Payed Date: {{ page.formattedPayedDate }}<br>
+      Shipping Date: {{ page.formattedShippingDate }}
+  items:
+    label: Items
+    type: structure
+    fields:
+      id:
+        label: ID
+        type: text
+      title:
+        label: Title
+        type: text
+      quantity:
+        label: Quantity
+        type: number
+      price:
+        label: Price
+        type: number
+      tax:
+        label: Tax
+        type: number
+      sum:
+        label: Sum
+        type: number
+      sumTax:
+        label: Sum Tax
+        type: number
+  email:
+    label: Email
+    type: email
+    required: true
+  legal:
+    label: Legal accepted
+    type: toggle

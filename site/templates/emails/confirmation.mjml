@@ -1,0 +1,140 @@
+<?php use Wagnerwagner\Merx; ?>
+<mjml>
+<mj-head>
+  <mj-style inline="inline">
+    .th {
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .link {
+      color: black;
+    }
+  </mj-style>
+</mj-head>
+<mj-body
+  background-color="hsl(0, 0%, 98%)"
+>
+  <mj-section background-color="white">
+    <mj-column>
+      <mj-image width="120px" src="<?= $site->images()->template('logo')->first()->url() ?>" />
+      <mj-text font-size="18px" line-height="24px"font-family="Helvetica Neue">
+        Hallo <?= $orderPage->givenName() ?> <?= $orderPage->familyName() ?>,<br>
+        <br>
+        vielen Dank für Deine Bestellung auf <a href="<?= $site->url() ?>" class="link">babyreport.de</a>. Falls Du Fragen haben solltest, kannst Du uns hier erreichen: <a href="mailto:info@babyreport.de" class="link">info@babyreport.de</a>
+      </mj-text>
+      <?php if ((string)$orderPage->paymentMethod() === 'invoice'): ?>
+      <mj-text font-size="23px" font-weight="bold" padding-top="50px" font-family="Helvetica Neue">
+        Zahlungsaufforderung
+      </mj-text>
+      <mj-text font-size="18px" line-height="24px"font-family="Helvetica Neue">
+        <?= $site->invoiceText()->kt() ?>
+      </mj-text>
+      <mj-table font-size="18px" padding-top="20px" line-height="24px" font-family="Helvetica Neue">
+        <tr>
+          <th class="th" style="padding-right: 16px; padding-top: 3px;">Empfänger</th>
+          <td><?= $site->accountHolder() ?></td>
+        </tr>
+        <tr>
+          <th class="th" style="padding-right: 16px; padding-top: 3px;">IBAN</th>
+          <td><?= $site->iban() ?></td>
+        </tr>
+        <tr>
+          <th class="th" style="padding-right: 16px; padding-top: 3px;">Betrag</th>
+          <td><?= Merx::formatPrice($orderPage->cart()->getSum()) ?></td>
+        </tr>
+        <tr>
+          <th class="th" style="padding-right: 16px; padding-top: 3px;">Verwendungszweck</th>
+          <td>Baby Report <?= $orderPage->invoiceNumber() ?></td>
+        </tr>
+      </mj-table>
+      <?php endif; ?>
+      <mj-text font-size="23px" font-weight="bold" padding-top="50px" font-family="Helvetica Neue">
+        Bestellübersicht
+      </mj-text>
+      <mj-table font-size="18px" padding-top="20px" line-height="24px" font-family="Helvetica Neue">
+        <tr>
+          <th class="th" style="padding-bottom: 20px; padding-right: 5px;">Produkt</th>
+          <th class="th" style="padding-bottom: 20px; padding-right: 5px; text-align: center;">Anzahl</th>
+          <th class="th" style="padding-bottom: 20px; padding-right: 5px; text-align: right;">Einzelpreis</th>
+          <th class="th" style="padding-bottom: 20px; text-align: right;">Summe</th>
+        </tr>
+        <?php foreach($orderPage->cart() as $item): ?>
+        <?php
+          $itemPage = page($item['id']);
+        ?>
+        <tr>
+          <td style="padding-bottom: 20px">
+          <?php if ($itemPage): ?>
+            <?php if ($itemPage->cover()): ?>
+              <img width="48px" src="<?= $itemPage->cover()->resize(48, 72)->url() ?>" /><br>
+            <?php endif; ?>
+            <strong><?= $itemPage->title(); ?></strong><br>
+            <?= $itemPage->productInfo(); ?>
+          <?php else: ?>
+          <strong><?= $item['id'] ?></strong>
+          <?php endif; ?>
+          </td>
+          <td style="padding-bottom: 20px; text-align: center;"><?= $item['quantity'] ?></td>
+          <td style="padding-bottom: 20px; text-align: right; padding-right: 5px; white-space: no-wrap"><?= Merx::formatPrice($item['price']) ?></td>
+          <td style="padding-bottom: 20px; text-align: right; white-space: no-wrap"><?= Merx::formatPrice($item['sum']) ?></td>
+        </tr>
+        <?php endforeach; ?>
+        <tr style="border-top: 1px solid black;">
+          <td></td>
+          <td></td>
+          <td style="text-align: right; padding-right: 16px; padding-top: 20px">Enthaltene MwSt.</td>
+          <td style="text-align: right; padding-top: 20px; white-space: no-wrap"><?= Merx::formatPrice($orderPage->cart()->getTax()) ?></td>
+        </tr>
+        <tr style="font-weight: 700;">
+          <td></td>
+          <td></td>
+          <td style="text-align: right; padding-right: 16px; padding-top: 5px;">Summe</td>
+          <td style="text-align: right; padding-top: 5px; white-space: no-wrap"><?= Merx::formatPrice($orderPage->cart()->getSum()) ?></td>
+        </tr>
+      </mj-table>
+    </mj-column>
+  </mj-section>
+  <mj-section background-color="white">
+    <mj-column>
+      <mj-text font-size="23px" font-weight="bold" padding-top="50px" font-family="Helvetica Neue">Rechnungsadresse</mj-text>
+      <mj-text font-size="18px" line-height="24px" padding-top="20px" font-family="Helvetica Neue">
+        <?= $orderPage->givenName() ?> <?= $orderPage->familyName() ?><br>
+        <?= $orderPage->street() ?><br>
+        <?= $orderPage->postalCode() ?> <?= $orderPage->city() ?>
+      </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-text font-size="23px" font-weight="bold" padding-top="50px" font-family="Helvetica Neue">Versandadresse</mj-text>
+      <mj-text font-size="18px" line-height="24px" padding-top="20px" font-family="Helvetica Neue">
+        <?php if ($orderPage->useInvoiceAddressAsShippingAddress()->toBool()) : ?>
+          <?= $orderPage->givenName() ?> <?= $orderPage->familyName() ?><br>
+          <?= $orderPage->street() ?><br>
+          <?= $orderPage->postalCode() ?> <?= $orderPage->city() ?>
+        <?php else: ?>
+          <?= $orderPage->shippingAddressGivenName() ?> <?= $orderPage->shippingAddressFamilyName() ?><br>
+          <?= $orderPage->shippingAddressStreet() ?><br>
+          <?= $orderPage->shippingAddressPostalCode() ?> <?= $orderPage->shippingAddressCity() ?>
+        <?php endif; ?>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+  <mj-section background-color="white">
+    <mj-column>
+      <mj-text font-size="18px" padding-top="20px" font-family="Helvetica Neue">
+        <a href="<?= $orderPage->url() ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Rechnung ansehen</a>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+  <mj-section>
+    <mj-column>
+      <mj-text align="center">
+        <?php foreach($site->pages()->filterBy('intendedTemplate', 'legal') as $item): ?>
+        <a href="<?= $item->url() ?>" class="link"><?= $item->title() ?></a>
+        <?php endforeach; ?>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-body>
+</mjml>

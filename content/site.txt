@@ -1,0 +1,67 @@
+Title: Baby Report
+
+----
+
+Seller:
+
+Peter Wagner
+Hechinger Strasse 53
+72770 Reutlingen
+(email: info@babyreport.de)
+
+----
+
+Thankyoutext:
+
+## Vielen Dank für Deine Bestellung
+
+Wir haben Dir eine Bestellbestätigung an folgende E-Mail-Adresse geschickt: **{{ email }}**
+
+----
+
+Invoicetext: Die Rechnung ist noch nicht beglichen. Bitte überweise den ausstehenden Betrag auf folgendes Konto.
+
+----
+
+Ibaninfo: Indem Du Deine IBAN angibst und diese Zahlung bestätigst, ermächtigst Du Rocketship Inc. und Stripe, unseren Zahlungsdienstleister, Anweisungen an Deine Bank zu senden, Dein Konto zu belasten und Deine Bank, Dein Konto gemäß diesen Anweisungen zu belasten. Du hast Anspruch auf eine Rückerstattung von Deiner Bank gemäß den Bedingungen Deiner Vereinbarung mit Deiner Bank. Eine Rückerstattung muss innerhalb von 8 Wochen ab dem Datum, an dem Dein Konto belastet wurde, beantragt werden.
+
+----
+
+Paymentmethods:
+
+-
+  value: credit-card
+  text: Kreditkarte
+  buttontext: ""
+-
+  value: sepa-debit
+  text: Lastschrift
+  buttontext: ""
+-
+  value: sofort
+  text: Sofort-Überweisung
+  buttontext: weiter zu sofort.de
+-
+  value: paypal
+  text: PayPal
+  buttontext: weiter zu PayPal
+-
+  value: invoice
+  text: Rechnung
+  buttontext: ""
+
+----
+
+Successtext:
+
+## Vielen Dank für Deine Bestellung
+
+Wir haben Dir eine Bestellbestätigung an folgende E-Mail-Adresse geschickt: **{{ email }}**
+
+----
+
+Accountholder: Peter Wagner
+
+----
+
+Iban: DE65640500000001851825

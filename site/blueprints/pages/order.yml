@@ -1,0 +1,37 @@
+title: Order
+
+status:
+  draft: Error
+  unlisted: Incomplete
+  listed: Complete
+
+options:
+  changeSlug: false
+  changeTemplate: false
+  changeTitle: false
+  delete: false
+
+tabs:
+  overview:
+    label: Overview
+    columns:
+      - width: 1/1
+        sections:
+          order: sections/order
+      - width: 1/2
+        sections:
+          invoice-address: sections/invoice-address
+      - width: 1/2
+        sections:
+          shipping-address: sections/shipping-address
+
+  payment:
+    label: Payment
+    sections:
+      payment-method: sections/payment-method
+      stripe: sections/stripe
+      paypal: sections/paypal
+  logs:
+    label: Logs
+    sections:
+      logs: sections/logs

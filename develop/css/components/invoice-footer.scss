@@ -1,0 +1,29 @@
+.invoice-footer {
+  margin-top: rem(140);
+  // padding-top: rem(30);
+  align-items: flex-end;
+  border-top: rem(1) solid $color--gray;
+  color: $color--gray;
+
+  > div {
+    @extend %text;
+    box-sizing: border-box;
+    margin-top: rem(20);
+
+    &:not(:last-child) {
+      padding-right: rem(48);
+    }
+  }
+
+  @media (min-width: em(640)) {
+    display: flex;
+
+    > div {
+      flex-basis: 50%;
+    }
+  }
+
+  @media print {
+    margin-top: rem(70)
+  }
+}

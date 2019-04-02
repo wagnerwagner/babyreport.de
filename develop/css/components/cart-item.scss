@@ -1,0 +1,174 @@
+.cart-item {
+  box-sizing: border-box;
+  min-height: rem(90);
+  display: flex;
+  width: 100%;
+  padding-bottom: rem(20);
+  align-content: stretch;
+  align-items: baseline;
+
+  &:not(:first-of-type) {
+    padding-top: rem(20);
+    border-top: rem(1) solid $color--gray;
+  }
+
+  th {
+    position: relative;
+    flex-basis: 40%;
+    padding-left: rem(48 + 16);
+    text-align: left;
+    font-weight: 400;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: rem(48);
+    }
+
+    strong {
+      display: block;
+    }
+  }
+
+  td:nth-child(2) {
+    > span {
+      display: block;
+      margin-left: rem(6);
+      margin-right: rem(6);
+    }
+  }
+
+
+  button[name="increase"],
+  button[name="decrease"] {
+    position: relative;
+    appearance: none;
+    display: flex;
+    margin-top: rem(2);
+    top: rem(-2);
+    height: rem($line-height--text * $font-size--text);
+    width: rem($line-height--text * $font-size--text);
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: inherit;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    // visible button
+    div {
+      display: block;
+      border-radius: 50%;
+      height: rem($line-height--text * $font-size--text - 7);
+      width: rem($line-height--text * $font-size--text - 7);
+      font-size: rem($font-size--small);
+      line-height: rem($line-height--text * $font-size--text - 7 - 2);
+      border: rem(1) solid transparentize($color: $color--gray, $amount: 0.5);
+      background-color: $color--white;
+    }
+
+    // plus (+) and minus (-)
+    span {
+      position: absolute;
+      left: calc(50% - #{rem(6 * 0.5)});
+      top: calc(50% - #{rem(2 * 0.5)});
+      width: rem(6);
+      height: rem(2);
+      background-color: $color--gray;
+
+      &:nth-of-type(2) {
+        transform: rotate(90deg);
+      }
+    }
+
+
+    &:focus,
+    &:hover {
+      color: $color--black;
+
+      div {
+        border: rem(1) solid transparentize($color: $color--gray, $amount: 0.2);
+      }
+    }
+  }
+
+
+  @media print, (min-width: em(640)) {
+    th {
+      min-height: rem(72);
+    }
+
+    td {
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        flex-basis: 15%;
+      }
+      &:nth-child(3) {
+        flex-basis: rem(100);
+        text-align: right;
+      }
+      &:nth-child(4) {
+        flex-basis: rem(100);
+        text-align: right;
+        padding-left: rem(16);
+      }
+    }
+
+    small {
+      display: none;
+    }
+  }
+
+
+  // Keine Tabelle. Infos untereinander.
+  @media screen and (max-width: em(640 - 1)) {
+    flex-wrap: wrap;
+
+    th {
+      flex-basis: 100%;
+    }
+
+    td {
+      display: block;
+      text-align: left;
+      padding-left: rem(48 + 16);
+      flex-basis: 100%;
+    }
+
+    small {
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      font-size: rem($font-size--small);
+
+      &::after {
+        content: ': ';
+      }
+    }
+
+    .cart--checkout & {
+      td {
+        &:nth-child(2) {
+          padding-top: rem(6);
+          padding-bottom: rem(6);
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: em(432 -1)) {
+    th {
+      // margin-bottom: rem(10);
+    }
+
+    td {
+      justify-content: flex-start;
+      padding-left: rem(48 + 16);
+    }
+  }
+}

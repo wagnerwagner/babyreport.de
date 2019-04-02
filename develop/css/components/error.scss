@@ -1,0 +1,17 @@
+.error {
+  color: $color--red;
+
+  &--message {
+    max-width: rem(672);
+    margin-left: auto;
+    margin-right: auto;
+    padding: rem(30) rem(24);
+    background-color: $color--white;
+
+    @extend %text;
+
+    @media (min-width: em(560)) {
+      padding: rem(50) rem(48);
+    }
+  }
+}

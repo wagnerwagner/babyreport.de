@@ -1,0 +1,9 @@
+%h3 {
+  margin-top: rem(30);
+  margin-bottom: rem(15);
+  font-size: 1em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

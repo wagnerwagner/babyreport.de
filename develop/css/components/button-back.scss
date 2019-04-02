@@ -1,0 +1,25 @@
+.button-back {
+  display: inline-block;
+  color: $color--black;
+  font-weight: 700;
+  font-size: rem($font-size--h3);
+  text-decoration: none;
+
+  &::before {
+    content: '← ';
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: $transition-duration;
+  }
+
+  &:focus,
+  &:hover {
+    &::before {
+      transform: translateX(#{rem(-2)});
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}

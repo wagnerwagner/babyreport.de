@@ -1,0 +1,11 @@
+%h2 {
+  margin-top: rem(60);
+  margin-bottom: rem(30);
+  font-size: rem($font-size--h2);
+  line-height: $line-height--h2;
+  font-weight: 400;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,44 @@
+.invoice-header {
+  @media print, (min-width: em($max-width)) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+.invoice-header__head {
+  order: 1;
+  flex-basis: rem(288);
+
+  h1 {
+    @extend %h1;
+    margin-bottom: rem(30);
+    font-size: rem($font-size--h1);
+    font-weight: 400;
+  }
+}
+
+
+.invoice-header__infos {
+  font-weight: 700;
+}
+
+
+.invoice-header__contact {
+  margin-top: rem(30);
+
+  p {
+    margin-top: 0;
+    margin-bottom: rem(10);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media print, (min-width: em(640)) {
+    margin-top: 0;
+    padding-top: rem($font-size--h1 * $line-height--h1 + 30);
+  }
+}

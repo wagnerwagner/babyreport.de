@@ -1,0 +1,18 @@
+%loading-indicator {
+  position: absolute;
+  left: calc(50% - #{rem(24 * 0.5)});
+  top: calc(50% - #{rem(24 * 0.5)});
+  box-sizing: border-box;
+  width: rem(24);
+  height: rem(24);
+  border-radius: rem(24 * 0.5);
+  border: rem(2) solid transparent;
+  border-top-color: $color--white;
+  opacity: 0;
+  animation-name: loading;
+  animation-duration: $transition-duration * 3;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition-duration: $transition-duration;
+  transition-property: opacity;
+}

@@ -1,0 +1,10 @@
+%h4 {
+  margin-top: rem(30);
+  margin-bottom: rem(15);
+  font-size: 1em;
+  font-style: italic;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: rem($padding * 2) rem($padding);
+  display: flex;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: transparentize($color: $color--darkgray, $amount: 0.1);
+  animation: fade-in $transition-duration * 0.5 ease-out;
+  // animation-iteration-count: infinite;
+
+  &[hidden] {
+    display: none;
+  }
+
+  .button-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  > div {
+    position: relative;
+    box-sizing: border-box;
+    max-width: rem($max-width - 48);
+    margin: auto;
+    padding: rem($padding * 3);
+    background-color: $color--lightgray-bg;
+    animation: move-from-bottom $transition-duration ease-out;
+  }
+
+  @media screen and (max-width: em(400)) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    > div {
+      padding-left: rem($padding);
+      padding-right: rem($padding);
+    }
+  }
+}

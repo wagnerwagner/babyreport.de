@@ -1,0 +1,26 @@
+.legal-nav {
+  display: flex;
+  padding-top: rem(50);
+  padding-bottom: rem(20);
+  flex-wrap: wrap;
+  color: $color--gray;
+  font-size: rem($font-size--small);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: rem(12);
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}

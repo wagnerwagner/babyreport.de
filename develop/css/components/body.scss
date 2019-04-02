@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: $font-family--helvetica-neue;
+  font-size: rem($font-size--text);
+  line-height: $line-height--text;
+  background-color: $color--lightgray-bg;
+  -webkit-font-smoothing: antialiased;
+
+
+  &.has-open-popup {
+    overflow: hidden;
+  }
+}

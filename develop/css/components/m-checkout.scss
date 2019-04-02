@@ -1,0 +1,36 @@
+.m-checkout {
+  max-width: rem($max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem($padding * 2);
+  padding-right: rem($padding * 2);
+
+  h2 {
+    @extend %h2;
+  }
+
+  .button-back {
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+  }
+
+  .error--message {
+    margin-bottom: rem(30);
+  }
+
+  @media print, (min-width: em(640)) {
+    .error--message {
+      margin-bottom: rem(50);
+    }
+  }
+
+  @media (max-width: em($bp-small-padding - 1)) {
+    padding-left: rem($padding--small);
+    padding-right: rem($padding--small);
+
+    .button-back {
+      margin-top: rem(30);
+      margin-bottom: rem(30);
+    }
+  }
+}

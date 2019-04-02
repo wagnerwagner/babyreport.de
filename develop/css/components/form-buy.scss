@@ -1,0 +1,28 @@
+.form-buy {
+  display: flex;
+  margin-top: rem(40);
+  flex-wrap: wrap;
+
+  input {
+    @extend %input;
+    width: rem(42);
+    margin-right: rem(16);
+  }
+
+  .error {
+    margin-top: rem(10);
+    flex-basis: 100%;
+  }
+
+  &.is-loading {
+    .button {
+      color: transparent;
+      transition-delay: 0s;
+
+      &::after {
+        opacity: 1;
+        transition-delay: $transition-duration;
+      }
+    }
+  }
+}

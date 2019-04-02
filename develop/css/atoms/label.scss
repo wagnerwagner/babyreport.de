@@ -1,0 +1,60 @@
+%label {
+  strong {
+    display: block;
+    margin-bottom: rem(10);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: rem($font-size--small);
+  }
+
+  small {
+    display: block;
+    margin-top: rem(5);
+    font-size: rem($font-size--small);
+  }
+
+  &.is-required {
+    strong {
+      &::after {
+        content: "*";
+        padding-left: rem(5);
+      }
+    }
+  }
+
+  &.is-checkbox,
+  &.is-option {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-right: rem(36);
+
+    input {
+      margin-right: rem(12);
+      flex-shrink: 0;
+    }
+
+    em {
+      font-style: normal;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    .error {
+      margin-top: rem(5);
+      margin-left: rem(24 + 12);
+      display: block;
+      flex-basis: 100%;
+    }
+  }
+
+  &.is-checkbox {
+    flex-wrap: wrap;
+
+    em {
+      flex-basis: calc(100% - #{rem(24 + 12)});
+    }
+  }
+}

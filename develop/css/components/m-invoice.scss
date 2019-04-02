@@ -1,0 +1,111 @@
+.m-invoice {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  max-width: rem($max-width + $padding * 2);
+  padding-left: rem($padding);
+  padding-right: rem($padding);
+
+  .button-back {
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+  }
+
+  .text {
+    margin-top: rem(50);
+  }
+
+  .confirmation {
+    margin-bottom: rem(30);
+  }
+
+  @media print {
+    .confirmation {
+      display: none;
+    }
+  }
+
+  @media print, (min-width: em(640)) {
+    .text {
+      margin-top: rem(70);
+    }
+    .confirmation {
+      margin-bottom: rem(50);
+    }
+  }
+
+  @media screen and (max-width: em($bp-small-padding)) {
+    padding-left: rem($padding--small);
+    padding-right: rem($padding--small);
+  }
+
+  @media screen and (max-width: em(400 - 1)) {
+    .button-back {
+      margin-top: rem(30);
+      margin-bottom: rem(30);
+    }
+  }
+}
+
+
+.m-invoice__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: auto;
+
+  @media print {
+    margin-bottom: rem(70);
+  }
+}
+
+
+.m-invoice__overview {
+  margin-top: rem(50);
+  width: 100%;
+
+  h2 {
+    @extend %h2;
+  }
+
+  @media print, (min-width: em(640)) {
+    margin-top: rem(70);
+  }
+
+}
+
+
+.m-invoice__shipping-info {
+  @media print, (min-width: em($max-width)) {
+    box-sizing: border-box;
+    padding-right: rem(24);
+  }
+}
+
+
+.m-invoice__paying-info {
+  table th {
+    width: rem(120);
+  }
+
+  @media print, (min-width: em($max-width)) {
+    box-sizing: border-box;
+    padding-left: rem(24);
+  }
+}
+
+
+.m-invoice__buttons {
+  margin-top: rem(70);
+
+  button {
+    margin-right: rem(16);
+  }
+
+  @media print {
+    display: none;
+  }
+}

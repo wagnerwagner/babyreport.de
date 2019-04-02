@@ -1,0 +1,29 @@
+.button {
+  position: relative;
+  font-size: rem($font-size--text);
+  font-family: inherit;
+  color: $color--white;
+  background-color: $color--darkgray;
+  border: 0;
+  margin: 0;
+  height: rem(42);
+  padding: rem(10) rem(16);
+  font-weight: 700;
+  appearance: none;
+
+  &::after {
+    content: '';
+    @extend %loading-indicator;
+  }
+
+  &:not([disabled]) {
+    cursor: pointer;
+    transition-duration: $transition-duration;
+    transition-property: background-color;
+
+    &:focus,
+    &:hover {
+      background-color: $color--black;
+    }
+  }
+}

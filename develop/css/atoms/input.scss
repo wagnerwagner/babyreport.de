@@ -1,0 +1,49 @@
+%input {
+  display: block;
+  height: rem(42);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: rem(8);
+  text-indent: rem(8);
+  font-family: inherit;
+  font-size: rem($font-size--text);
+  color: inherit;
+  border: rem(1) solid $color--gray;
+  border-radius: 0;
+  background-color: $color--white;
+  appearance: none;
+
+  &[type="number"] {
+    text-align: center;
+
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+
+  &[type="checkbox"] {
+    height: rem(24);
+    width: rem(24);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:checked {
+      background-image: url('../images/checkmark.svg');
+    }
+  }
+
+  &[type="radio"] {
+    height: rem(24);
+    width: rem(24);
+    border-radius: rem(24 * 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:checked {
+      background-image: radial-gradient($color--black, $color--black 40%, $color--white 41%, $color--white);
+      background-position: center;
+    }
+  }
+}

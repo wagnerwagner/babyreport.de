@@ -1,0 +1,11 @@
+.summary {
+  position: relative;
+  width: 100%;
+  max-width: rem(864);
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    @extend %h2;
+  }
+}

@@ -1,0 +1,10 @@
+@keyframes move-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(#{rem(4)});
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

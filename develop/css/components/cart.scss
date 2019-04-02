@@ -1,0 +1,185 @@
+.cart {
+  position: relative;
+
+  table {
+    display: block;
+    width: 100%;
+    border-spacing: 0;
+
+    th,
+    td {
+      display: block;
+    }
+  }
+
+  thead,
+  tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  thead,
+  tbody {
+    th,
+    td {
+      box-sizing: border-box;
+      flex-grow: 1;
+    }
+  }
+
+  thead {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: rem($font-size--small);
+
+    tr {
+      display: flex;
+      width: 100%;
+      align-content: stretch;
+      align-items: baseline;
+    }
+
+    th {
+      padding-bottom: rem(20);
+      font-weight: 400;
+      &:nth-child(1) {
+        flex-basis: 40%;
+        text-align: left;
+      }
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        flex-basis: 15%;
+      }
+      &:nth-child(3) {
+        flex-basis: rem(100);
+        text-align: right;
+
+      }
+      &:nth-child(4) {
+        flex-basis: rem(100);
+        text-align: right;
+        padding-left: rem(8);
+      }
+    }
+  }
+
+  tbody {
+    min-height: rem(90);
+  }
+
+  tfoot {
+    display: block;
+    width: 100%;
+    border-top: rem(1) solid $color--black;
+    padding-top: rem(20);
+
+    th {
+      font-weight: 400;
+    }
+
+    th,
+    td {
+      padding-top: rem(5);
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    tr {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      > *:last-child {
+        padding-left: rem(8);
+        flex-basis: rem(88);
+      }
+
+      &:last-child {
+        th {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  // Keine Tabelle. Infos untereinander.
+  @media screen and (max-width: em(640 - 1)) {
+    thead {
+      display: none;
+    }
+    tfoot {
+      tr {
+        justify-content: flex-start;
+
+        > * {
+          &:nth-last-child(2) {
+            text-align: left;
+          }
+        }
+
+        > *:last-child {
+          flex-basis: rem(72);
+        }
+
+        > *:first-child {
+          flex-basis: rem(136);
+        }
+      }
+    }
+  }
+}
+
+
+.cart__update-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  opacity: 0;
+  z-index: 1;
+  background-color: transparentize($color: $color--lightgray-bg, $amount: 0.2);
+
+  &::after {
+    content: '';
+    @extend %loading-indicator;
+    transition-delay: $transition-duration;
+  }
+
+  .cart.is-updating & {
+    display: block;
+    animation: fade-in $transition-duration * 2 ease-out forwards;
+
+    &::after {
+      opacity: 1;
+      border-top-color: $color--black;
+    }
+  }
+}
+
+
+.cart__error-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+  color: $color--red;
+  font-weight: 700;
+  background-color: transparentize($color: $color--lightgray-bg, $amount: 0.2);
+  animation: fade-in $transition-duration * 2 ease-out forwards;
+
+  &[hidden] {
+    display: none;
+  }
+}

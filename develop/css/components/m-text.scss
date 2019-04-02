@@ -1,0 +1,28 @@
+.m-text {
+  box-sizing: border-box;
+  display: flex;
+  max-width: rem($max-width + $padding * 2);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem($padding);
+  padding-right: rem($padding);
+  flex-direction: column;
+  min-height: 100vh;
+
+  > div {
+    @extend %text;
+    margin-bottom: auto;
+  }
+
+  .button-back {
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+  }
+
+  @media (max-width: em(400 - 1)) {
+    .button-back {
+      margin-top: rem(30);
+      margin-bottom: rem(30);
+    }
+  }
+}

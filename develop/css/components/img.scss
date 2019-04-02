@@ -1,0 +1,13 @@
+.img {
+  position: relative;
+  padding-top: 50%;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+#paypal-plus {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - #{rem(24 * 0.5)});
+    top: calc(50% - #{rem(24 * 0.5)});
+    box-sizing: border-box;
+    width: rem(24);
+    height: rem(24);
+    border-radius: rem(24 * 0.5);
+    border: rem(2) solid transparent;
+    border-top-color: $color--black;
+    animation-name: loading;
+    animation-duration: $transition-duration * 3;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  iframe {
+    position: relative;
+    z-index: 1;
+  }
+}

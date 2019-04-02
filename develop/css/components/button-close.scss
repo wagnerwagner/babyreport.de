@@ -1,0 +1,27 @@
+.button-close {
+  position: relative;
+  width: rem(56);
+  height: rem(56);
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    left: calc(50% - #{rem(18 * 0.5)});
+    top: calc(50% - #{rem(2 * 0.5)});
+    height: rem(2);
+    width: rem(18);
+    background-color: $color--darkgray;
+
+    &:nth-of-type(1) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-of-type(2) {
+      transform: rotate(-45deg);
+    }
+  }
+}

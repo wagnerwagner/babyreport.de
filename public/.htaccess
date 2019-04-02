@@ -7,6 +7,9 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule (.*) https://www.babyreport.de/$1 [R=301,L]
+
 RewriteCond %{HTTP_HOST} ^www.babyreport.de
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://www.babyreport.de/$1 [R=301,L]

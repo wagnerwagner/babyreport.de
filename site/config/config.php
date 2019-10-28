@@ -8,18 +8,6 @@ return [
   'ww.merx.currencySymbol' => '€',
   'ww.merx.email' => 'info@babyreport.de',
   'ww.merx.ordersPage' => 'rechnungen',
-  'ww.merx.gateways' => [
-    'invoice' => [
-      'initializePayment' => function(OrderPage $virtualOrderPage): OrderPage
-      {
-        return $virtualOrderPage;
-      },
-      'completePayment' => function(OrderPage $virtualOrderPage): OrderPage
-      {
-        return $virtualOrderPage;
-      },
-    ],
-  ],
 
   'thumbs' => [
     'quality' => 80,

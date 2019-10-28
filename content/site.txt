@@ -29,26 +29,22 @@ Ibaninfo: Indem Du Deine IBAN angibst und diese Zahlung bestätigst, ermächtigs
 
 Paymentmethods:
 
--
+- 
   value: credit-card
   text: Kreditkarte
   buttontext: ""
--
+- 
   value: sepa-debit
   text: Lastschrift
   buttontext: ""
--
+- 
   value: sofort
   text: Sofort-Überweisung
   buttontext: weiter zu sofort.de
--
+- 
   value: paypal
   text: PayPal
   buttontext: weiter zu PayPal
--
-  value: invoice
-  text: Rechnung
-  buttontext: ""
 
 ----
 

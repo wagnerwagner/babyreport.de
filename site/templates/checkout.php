@@ -47,7 +47,7 @@
     <div class="form-checkout__section--payment-selection">
       <?php foreach($site->paymentMethods()->toStructure() as $paymentMethod): ?>
         <label class="is-option">
-          <input type="radio" name="paymentMethod" value="<?= $paymentMethod->value() ?>" __required data-submit-text="<?= $paymentMethod->buttonText() ?>">
+          <input type="radio" name="paymentMethod" value="<?= $paymentMethod->value() ?>" required data-submit-text="<?= $paymentMethod->buttonText() ?>">
           <em><?= $paymentMethod->text() ?></em>
         </label>
       <?php endforeach; ?>
@@ -72,7 +72,7 @@
 
     <div class="form-checkout__section">
       <label class="is-checkbox is-full">
-        <input type="checkbox" name="legal" __required>
+        <input type="checkbox" name="legal" required>
         <em>Hiermit akzeptiere ich die <a href="/widerrufsbelehrung" data-href="widerrufsbelehrung" data-target="popup">Widerrufsbelehrung</a>, die <a href="/datenschutzerklarung" data-href="datenschutzerklarung" data-target="popup">Datenschutzerklärung</a> und die <a href="/agb" data-href="agb" data-target="popup">AGB</a></em>
       </label>
     </div>

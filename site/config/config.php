@@ -27,23 +27,6 @@ return [
   ],
   'routes' => [
     [
-      'method' => 'get',
-      'pattern' => 'shop-api/mark-as-shipped',
-      'action' => function() {
-        $order = $_GET['order'];
-        $orderPage = site()->find('orders/'.$order);
-        if ($orderPage && hash('md5', $orderPage->tite() . $orderPage->formattedSum()) === $_GET['hash']) {
-          kirby()->impersonate('kirby');
-          $orderPage->update([
-            'shipped' => 'true',
-          ]);
-          go($orderPage->panelUrl());
-        } else {
-          go('error');
-        }
-      }
-    ],
-    [
       'method' => 'post',
       'pattern' => 'shop-api/add-to-cart',
       'action' => function() {

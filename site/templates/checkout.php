@@ -56,7 +56,7 @@
     <div class="form-checkout__section">
       <input type="hidden" name="stripePublishableKey" value="<?= option('ww.merx.production') === true ? option('ww.merx.stripe.live.publishable_key') : option('ww.merx.stripe.test.publishable_key') ?>">
 
-      <label class="is-full is-required" hidden data-payment-method="credit-card">
+      <label class="is-full is-required" hidden data-payment-method="credit-card-sca">
         <strong>Kreditkarte</strong>
         <div id="stripe-card"></div>
         <div class="error" role="alert"></div>

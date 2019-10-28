@@ -63,6 +63,18 @@ return [
       },
     ],
     [
+      'pattern' => 'shop-api/get-client-secret',
+      'action' => function() {
+        $merx = merx();
+        $cart = $merx->cart();
+        $paymentIntent = $cart->getStripePaymentIntent();
+        kirby()->session()->set('ww.site.paymentIntentId', $paymentIntent->id);
+        return [
+          'clientSecret' => $paymentIntent->client_secret,
+        ];
+      },
+    ],
+    [
       'method' => 'post',
       'pattern' => 'shop-api/update-cart-item',
       'action' => function () {
@@ -96,7 +108,12 @@ return [
       'pattern' => 'shop-api/submit',
       'action' => function() {
         try {
-          $redirect = merx()->initializePayment($_POST);
+          $data = $_POST;
+          $paymentIntentId = kirby()->session()->get('ww.site.paymentIntentId');
+          $data = array_merge($data, [
+            'stripePaymentIntentId' => $paymentIntentId,
+          ]);
+          $redirect = merx()->initializePayment($data);
           return [
             'status' => 201,
             'redirect' => url($redirect),

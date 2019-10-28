@@ -30,7 +30,7 @@ Ibaninfo: Indem Du Deine IBAN angibst und diese Zahlung bestätigst, ermächtigs
 Paymentmethods:
 
 - 
-  value: credit-card
+  value: credit-card-sca
   text: Kreditkarte
   buttontext: ""
 - 

@@ -69,6 +69,15 @@ function showFieldErros(data) {
   });
 }
 
+function getClientSecret() {
+  return fetch('shop-api/get-client-secret').then(response => response.json()).then(data => data.clientSecret).catch((exception) => {
+    console.error(exception);
+    const errorElement = element.querySelector('.form-checkout__submit .error');
+    errorElement.textContent = 'Unknown Server Error.';
+  });
+}
+
+
 function submit() {
   fetch(element.action, {
     method: element.method,
@@ -149,38 +158,55 @@ if (element) {
     });
   }
 
-  element.addEventListener('submit', (event) => {
+  element.addEventListener('submit', async (event) => {
     event.preventDefault();
     setLoading();
-    if (paymentMethod === 'credit-card') {
-      stripe.createToken(stripe.card).then((result) => {
-        if (result.error) {
+    if (element.checkValidity()) {
+      if (paymentMethod === 'credit-card-sca') {
+        const clientSecret = await getClientSecret();
+        const cardElement = stripe.card;
+
+        const { error } = await stripe.handleCardPayment(
+          clientSecret, cardElement, {
+            payment_method_data: {
+              billing_details: {
+                name: `${element.givenname.value} ${element.familyname}`,
+                city: element.city,
+              },
+            },
+          },
+        );
+
+        if (error) {
           unsetLoading();
           const errorElement = stripe.cardElement.parentElement.querySelector('.error');
-          errorElement.textContent = result.error.message;
+          errorElement.textContent = error.message;
         } else {
-          setStripeToken(result.token);
           submit();
         }
-      });
-    } else if (paymentMethod === 'sepa-debit') {
-      const sourceData = {
-        type: 'sepa_debit',
-        currency: 'eur',
-      };
+      } else if (paymentMethod === 'sepa-debit') {
+        const sourceData = {
+          type: 'sepa_debit',
+          currency: 'eur',
+        };
 
-      stripe.createSource(stripe.sepaDebit, sourceData).then((result) => {
-        if (result.error) {
-          unsetLoading();
-          const errorElement = stripe.sepaDebitElement.parentElement.querySelector('.error');
-          errorElement.textContent = result.error.message;
-        } else {
-          setStripeToken(result.source);
-          submit();
-        }
-      });
+        stripe.createSource(stripe.sepaDebit, sourceData).then((result) => {
+          if (result.error) {
+            unsetLoading();
+            const errorElement = stripe.sepaDebitElement.parentElement.querySelector('.error');
+            errorElement.textContent = result.error.message;
+          } else {
+            setStripeToken(result.source);
+            submit();
+          }
+        });
+      } else {
+        submit();
+      }
     } else {
-      submit();
+      const errorElement = element.querySelector('.form-checkout__submit .error');
+      errorElement.textContent = 'Ihre Angaben sind nicht vollständig.';
+      unsetLoading();
     }
   });
 }

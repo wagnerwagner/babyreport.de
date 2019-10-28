@@ -8,18 +8,6 @@ return [
   'ww.merx.currencySymbol' => '€',
   'ww.merx.email' => 'info@babyreport.de',
   'ww.merx.ordersPage' => 'rechnungen',
-  'ww.merx.gateways' => [
-    'invoice' => [
-      'initializePayment' => function(OrderPage $virtualOrderPage): OrderPage
-      {
-        return $virtualOrderPage;
-      },
-      'completePayment' => function(OrderPage $virtualOrderPage): OrderPage
-      {
-        return $virtualOrderPage;
-      },
-    ],
-  ],
 
   'thumbs' => [
     'quality' => 80,
@@ -39,23 +27,6 @@ return [
   ],
   'routes' => [
     [
-      'method' => 'get',
-      'pattern' => 'shop-api/mark-as-shipped',
-      'action' => function() {
-        $order = $_GET['order'];
-        $orderPage = site()->find('orders/'.$order);
-        if ($orderPage && hash('md5', $orderPage->tite() . $orderPage->formattedSum()) === $_GET['hash']) {
-          kirby()->impersonate('kirby');
-          $orderPage->update([
-            'shipped' => 'true',
-          ]);
-          go($orderPage->panelUrl());
-        } else {
-          go('error');
-        }
-      }
-    ],
-    [
       'method' => 'post',
       'pattern' => 'shop-api/add-to-cart',
       'action' => function() {
@@ -72,6 +43,18 @@ return [
         } catch (Kirby\Exception\Exception $ex) {
           return $ex->toArray();
         }
+      },
+    ],
+    [
+      'pattern' => 'shop-api/get-client-secret',
+      'action' => function() {
+        $merx = merx();
+        $cart = $merx->cart();
+        $paymentIntent = $cart->getStripePaymentIntent();
+        kirby()->session()->set('ww.site.paymentIntentId', $paymentIntent->id);
+        return [
+          'clientSecret' => $paymentIntent->client_secret,
+        ];
       },
     ],
     [
@@ -108,7 +91,12 @@ return [
       'pattern' => 'shop-api/submit',
       'action' => function() {
         try {
-          $redirect = merx()->initializePayment($_POST);
+          $data = $_POST;
+          $paymentIntentId = kirby()->session()->get('ww.site.paymentIntentId');
+          $data = array_merge($data, [
+            'stripePaymentIntentId' => $paymentIntentId,
+          ]);
+          $redirect = merx()->initializePayment($data);
           return [
             'status' => 201,
             'redirect' => url($redirect),

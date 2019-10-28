@@ -27,10 +27,10 @@ Ibaninfo: Indem Du Deine IBAN angibst und diese Zahlung bestätigst, ermächtigs
 
 ----
 
-Paymentmethods: 
+Paymentmethods:
 
 - 
-  value: credit-card
+  value: credit-card-sca
   text: Kreditkarte
   buttontext: ""
 - 
@@ -45,10 +45,6 @@ Paymentmethods:
   value: paypal
   text: PayPal
   buttontext: weiter zu PayPal
-- 
-  value: invoice
-  text: Rechnung
-  buttontext: ""
 
 ----
 

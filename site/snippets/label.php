@@ -13,6 +13,6 @@ $orderPage = new OrderPage([
 ?>
 <label class="<?= $class ?>">
   <strong><?= $label ?? $field['label'] ?></strong>
-  <input type="<?= $field['type'] ?>" name="<?= strtolower($fieldId) ?>" <?= $required ? '__required' : '' ?> <?= isset($autocomplete) ? 'autocomplete="'.$autocomplete.'"' : '' ?>>
+  <input type="<?= $field['type'] ?>" name="<?= strtolower($fieldId) ?>" <?= $required ? 'required' : '' ?> <?= isset($autocomplete) ? 'autocomplete="'.$autocomplete.'"' : '' ?>>
 </label>
 <?php endif; ?>

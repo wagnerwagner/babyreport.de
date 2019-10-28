@@ -357,7 +357,6 @@ use Wagnerwagner\Merx\Merx;
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;padding-top:20px;word-break:break-word;">
                       <div style="font-family:Helvetica Neue;font-size:18px;line-height:1;text-align:left;color:#000000;">
-                        <a href="<?= $site->url() ?>/shop-api/mark-as-shipped?order=<?= $orderPage->uid() ?>&amp;hash=<?= hash('md5', $orderPage->tite() . $orderPage->formattedSum()) ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Als versandt markieren</a>
                         <a href="<?= $orderPage->panelUrl() ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Panel öffnen</a>
                         <a href="<?= $orderPage->url() ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Rechnung ansehen</a>
                       </div>

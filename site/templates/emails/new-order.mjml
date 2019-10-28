@@ -95,7 +95,6 @@
   <mj-section background-color="white">
     <mj-column>
       <mj-text font-size="18px" padding-top="20px" font-family="Helvetica Neue">
-        <a href="<?= $site->url() ?>/shop-api/mark-as-shipped?order=<?= $orderPage->id() ?>&amp;hash=<?= hash('md5', $orderPage) ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Als versandt markieren</a>
         <a href="<?= $orderPage->panelUrl() ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Panel öffnen</a>
         <a href="<?= $orderPage->url() ?>" style="background-color: black; color: white; padding: 10px 16px; text-decoration: none;">Rechnung ansehen</a>
       </mj-text>

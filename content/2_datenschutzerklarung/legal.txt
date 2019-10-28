@@ -2,7 +2,7 @@ Title: Datenschutzerklärung
 
 ----
 
-Text:
+Text: 
 
 # Datenschutzerklärung
 
@@ -13,8 +13,8 @@ Personenbezogene Daten sind Einzelangaben über persönliche oder sachliche Verh
 ## I. Verantwortlicher
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung:
 Peter Wagner
-Hechinger Strasse 53
-72770 Reutlingen
+Burkhardt+Weber-Str. 59
+72760 Reutlingen
 info@babyreport.de
 
 ## II. Datenschutzbeauftragter

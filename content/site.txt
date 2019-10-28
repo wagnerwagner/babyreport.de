@@ -2,16 +2,16 @@ Title: Baby Report
 
 ----
 
-Seller:
+Seller: 
 
 Peter Wagner
-Hechinger Strasse 53
-72770 Reutlingen
+Burkhardt+Weber-Str. 59
+72760 Reutlingen
 (email: info@babyreport.de)
 
 ----
 
-Thankyoutext:
+Thankyoutext: 
 
 ## Vielen Dank für Deine Bestellung
 
@@ -27,32 +27,32 @@ Ibaninfo: Indem Du Deine IBAN angibst und diese Zahlung bestätigst, ermächtigs
 
 ----
 
-Paymentmethods:
+Paymentmethods: 
 
--
+- 
   value: credit-card
   text: Kreditkarte
   buttontext: ""
--
+- 
   value: sepa-debit
   text: Lastschrift
   buttontext: ""
--
+- 
   value: sofort
   text: Sofort-Überweisung
   buttontext: weiter zu sofort.de
--
+- 
   value: paypal
   text: PayPal
   buttontext: weiter zu PayPal
--
+- 
   value: invoice
   text: Rechnung
   buttontext: ""
 
 ----
 
-Successtext:
+Successtext: 
 
 ## Vielen Dank für Deine Bestellung
 

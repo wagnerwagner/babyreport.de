@@ -1,3 +1,11 @@
+<If "%{HTTP_HOST} == 'test.babyreport.de'">
+  AuthType Basic
+  AuthName "Passierschein."
+  AuthUserFile /is/htdocs/wp1096941_ZFYI6KLC44/www/babyreport.de/.htpasswd
+  Require valid-user
+</If>
+
+
 # Kirby .htaccess
 
 # rewrite rules
@@ -7,7 +15,7 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^babyreport.de
 RewriteRule (.*) https://www.babyreport.de/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^www.babyreport.de

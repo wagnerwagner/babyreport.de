@@ -92,9 +92,9 @@ return [
       'action' => function() {
         try {
           $data = $_POST;
-          $paymentIntentId = kirby()->session()->get('ww.site.paymentIntentId');
+          $paymentIntentId = kirby()->session()->get('ww.site.paymentIntentId', '');
           $data = array_merge($data, [
-            'stripePaymentIntentId' => $paymentIntentId,
+            'stripePaymentIntentId' => (string)$paymentIntentId,
           ]);
           $redirect = merx()->initializePayment($data);
           return [

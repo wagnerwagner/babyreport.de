@@ -24,7 +24,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "imagemin-mozjpeg": "^8.0.0",
-    "node-notifier": "^5.4.3",
+    "node-notifier": "^8.0.1",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1"

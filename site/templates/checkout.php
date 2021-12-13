@@ -29,6 +29,9 @@
     </div>
 
     <h2>Versandadresse</h2>
+    <div class="form-checkout__notice">
+      Versand nur innerhalb Deutschlands.
+    </div>
     <label class="is-checkbox">
       <input type="checkbox" name="useInvoiceAddressAsShippingAddress" checked>
       <em>Rechungsadresse verwenden</em>

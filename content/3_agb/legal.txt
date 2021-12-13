@@ -28,7 +28,7 @@ Wir speichern den Vertragstext und senden Ihnen die Bestelldaten und unsere AGB 
 
 ## 3. Lieferbedingungen
 
-Wir liefern versandkostenfrei. Wir liefern nur im Versandweg. Eine Selbstabholung der Ware ist leider nicht möglich.
+Wir liefern versandkostenfrei. Wir liefern nur im Versandweg. Eine Selbstabholung der Ware ist leider nicht möglich. Wir liefern nur innerhalb Deutschlands.
 
 ## 4. Bezahlung
 In unserem Shop stehen Ihnen die folgenden Zahlungsarten zur Verfügung:

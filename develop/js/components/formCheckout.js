@@ -170,8 +170,10 @@ if (element) {
           clientSecret, cardElement, {
             payment_method_data: {
               billing_details: {
-                name: `${element.givenname.value} ${element.familyname}`,
-                city: element.city,
+                name: `${element.givenname.value} ${element.familyname.value}`,
+                address: {
+                  city: `${element.city.value}`,
+                },
               },
             },
           },
